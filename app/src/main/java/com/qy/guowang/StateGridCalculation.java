@@ -69,14 +69,6 @@ public class StateGridCalculation {
         return degreeDetail(Math.toDegrees(Math.atan(tanValue)));
     }
 
-
-    public static void main(String[] args) {
-        StateGridCalculation calculation = new StateGridCalculation();
-//        String s = calculation.sideOfItemCalculationWithDegrees(208, -35, 19.74, 8, 57,37);
-        String s = calculation.outSideOfItemCalculation(208, 10, 656.0, 20, 16, 55, 30, 4, 30);
-        System.out.println(s);
-    }
-
     private Double valueFCalculation(Integer dangJu, Integer temp) {
         int upDangJu = (dangJu - 200) / 15 * 15 + 200;
         int downDangJu = ((dangJu - 200) / 15) * 15 + 215;
